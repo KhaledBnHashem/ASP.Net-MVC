@@ -1,0 +1,18 @@
+﻿@model Player
+
+@{
+    ViewBag.Title = "Summary";
+}
+
+<h1>Summary</h1>
+
+<p>First Name: @Model.FirstName</p>
+<p>Last Name: @Model.LastName</p>
+<p>Email: @Model.Email</p>
+<p>Phone Number: @Model.PhoneNumber</p>
+<p>Submission Time: @Model.SubmissionTime</p>
+
+<h2>About the Author</h2>
+<p>Khaled Hashem</p>
+
+<a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Back to Home</a>

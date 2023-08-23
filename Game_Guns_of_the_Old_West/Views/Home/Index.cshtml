@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Guns of the Old West</h1>
+    <p>@ViewBag.BulletCount bullets left</p>
+    <form asp-controller="Home" asp-action="Shoot" method="post">
+        <button type="submit" class="btn btn-shoot">Shoot</button>
+
+    </form>
+</div>
+
+
+<style>
+    .circular-button {
+        width: 70px;
+        height: 70px;
+        padding: 10px 16px;
+        font-size: 18px;
+        line-height: 1.33;
+        border: 5px solid darkgray;
+        border-radius: 50%;
+    }
+</style>
